@@ -60,6 +60,10 @@ yarn lint
 npm run lint
 ```
 
+## Deployment (GitHub Pages)
+
+You can view the deployed app here: [https://kalio753.github.io/99-swapper/](https://kalio753.github.io/99-swapper/)
+
 ## Project Structure
 
 -   `src/` — Main source code
