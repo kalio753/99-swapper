@@ -37,7 +37,9 @@ export default function TokenBox({
                     {token ? (
                         <>
                             <img
-                                src={`/src/assets/tokens/${token.currency}.svg`}
+                                src={`${import.meta.env.BASE_URL}tokens/${
+                                    token.currency
+                                }.svg`}
                                 alt=""
                                 className="w-5 h-5"
                             />
