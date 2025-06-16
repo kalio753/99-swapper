@@ -15,7 +15,7 @@ import {
 
 export function NavBar() {
     return (
-        <NavigationMenu viewport={false}>
+        <NavigationMenu viewport={false} className="z-[99]">
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <NavigationMenuTrigger>Home</NavigationMenuTrigger>

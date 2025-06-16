@@ -8,6 +8,7 @@ import { useState, useEffect } from "react"
 import type { Token } from "./models/token"
 import { motion } from "framer-motion"
 import Swapper from "./components/common/swapper"
+import MarqueeLoop from "./components/common/marquee-loop"
 
 function App() {
     const [tokenFrom, setTokenFrom] = useState<Token | undefined>()
@@ -43,7 +44,7 @@ function App() {
         >
             <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
                 <div className="bg-background text-foreground py-1">
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-between items-center w-4/5 mx-auto">
                         <NavBar />
                         <div className="flex items-center gap-4">
                             <ThemeToggle />
@@ -53,14 +54,18 @@ function App() {
                         </div>
                     </div>
 
+                    <div className="w-4/5 overflow-hidden py-2 mx-auto">
+                        <MarqueeLoop />
+                    </div>
+
                     <motion.div
-                        className="box-border flex flex-col items-center justify-center my-10 mx-auto w-4/5 p-8 mb-8 "
+                        className="box-border flex flex-col items-center justify-center my-8 mx-auto w-4/5 p-8 mt-4"
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0 }}
                     >
                         <h1 className="mb-2">
-                            <span className="linear-wipe font-bold m-0 mt-2 text-[64px]  leading-[72px]">
+                            <span className="linear-wipe font-bold m-0 mt-2 text-[64px] leading-[72px]">
                                 99
                             </span>{" "}
                             Swapper

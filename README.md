@@ -10,6 +10,10 @@ A modern, animated token swap UI built with React, TypeScript, Vite, Tailwind CS
 -   Swap direction toggle with smooth icon animation
 -   Confirmation dialog before swapping
 -   Loading states for async actions
+-   Live price feed simulation
+-   Theme toggle: dark and light mode support
+-   Logic extendable navigation bar
+-   Can improve by integrating web3 library to connect wallet and fetch trade route, gas fee, price impact, etc.
 
 ## Getting Started
 
@@ -80,3 +84,18 @@ You can view the deployed app here: [https://kalio753.github.io/99-swapper/](htt
 ## License
 
 MIT
+
+## Library Used
+
+This project is a React application written in TypeScript and built using Vite for fast development and optimized production builds.
+
+### UI Library Choice
+
+I chose to use the Shadcn UI library because I noticed that 99Tech's website utilizes Tailwind CSS. Shadcn UI is a lightweight component library that offers strong support and seamless integration with Tailwind CSS, making it an excellent fit for building modern, responsive interfaces with minimal overhead.
+
+### Main Libraries Used
+
+-   **Vite**: Fast build tool and development server for modern web projects.
+-   **Shadcn UI**: Lightweight React component library with strong Tailwind CSS support.
+-   **Framer Motion**: Powerful animation library for React, used for smooth UI transitions.
+-   **gh-pages**: Utility for deploying the app to GitHub Pages.
