@@ -57,7 +57,9 @@ export default function TokenSelectDialog({
                                 >
                                     <div className="flex items-center gap-2">
                                         <img
-                                            src={`/src/assets/tokens/${token.currency}.svg`}
+                                            src={`${
+                                                import.meta.env.BASE_URL
+                                            }tokens/${token.currency}.svg`}
                                             alt={token.currency}
                                             className="w-6 h-6"
                                         />
