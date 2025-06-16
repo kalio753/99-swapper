@@ -1,0 +1,38 @@
+/* Set box-sizing to border-box globally */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#root {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Hide number input arrows for all browsers */
+.hide-arrows::-webkit-outer-spin-button,
+.hide-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.hide-arrows[type="number"] {
+    -moz-appearance: textfield;
+}
